@@ -1,0 +1,74 @@
+.module-editor {
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.module-editor-section {
+    background-color: #282c33;
+    padding-bottom: 15px;
+    border-bottom: 10px solid #20242a;
+    padding: 25px 20px 25px 20px;
+    &>p {
+        font-size: 1.1em;
+        margin: 10px 0 10px 0;
+    }
+    &>h1 {
+        margin: 0;
+    }
+}
+
+.module-editor-section-heading {
+    font-weight: normal;
+    font-size: 1.8em;
+    color: #d7dae0;
+}
+
+.module-editor-section-cell {
+    display: flex;
+    flex-direction: column;
+}
+
+.module-editor-section-cell-title {
+    color: #d7dae0;
+    font-size: 1.3em;
+    margin: 20px 0 10px 0;
+}
+
+.module-editor-section-cell-content {
+
+}
+
+.module-editor-table {
+    padding: 0;
+    margin: 20px 0;
+}
+
+.module-editor-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid;
+    vertical-align: top;
+    padding: 5px;
+    &>span{
+        width: 100%;
+    }
+}
+
+.module-editor-cell {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: none;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    padding: 5px;
+    &>input{
+        border: none;
+        padding: 8px 0px 8px 0px;
+        background: transparent;
+        width: 100%;
+        text-align: left;
+    }
+}

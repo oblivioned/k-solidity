@@ -1,0 +1,40 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+@import "k-solidity-module-editor";
+
+@tree-view-item-color: #6ba3a5;
+
+.k-solidity {
+
+}
+
+// package
+.icon[data-name$=".ksol"]:before {
+    content: "\f0c4";
+    color: @tree-view-item-color;
+}
+
+.icon[data-name$=".ksol"] {
+    color: @tree-view-item-color;
+}
+
+.directory>.header>.icon {
+    &[data-path$="/modules"]:before{
+        content: "\f0c4";
+        color: @tree-view-item-color;
+    }
+    &[data-path$="/modules"]{
+        content: "\f0c4";
+        color: @tree-view-item-color;
+    }
+}
+
+.loadingCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

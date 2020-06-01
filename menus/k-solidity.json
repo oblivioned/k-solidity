@@ -1,0 +1,30 @@
+{
+	"context-menu": {
+		"atom-text-editor": [{
+			"label": "KSolidityIDE",
+			"command": "k-solidity:daemon"
+		}]
+	},
+	"menu": [{
+		"label": "Packages",
+		"submenu": [{
+			"label": "KSolidityIDE",
+			"submenu": [{
+				"label": "Deamon",
+				"command": "k-solidity:daemon"
+			}, {
+				"label": "Shutdown",
+				"command": "k-solidity:shutdown"
+			}, {
+				"label": "Views",
+				"submenu": [{
+					"label": "Welcome",
+					"command": "k-solidity:views:welcome"
+				}, {
+					"label": "Project",
+					"command": "k-solidity:views:project"
+				}]
+			}]
+		}]
+	}]
+}
